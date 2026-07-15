@@ -1,0 +1,60 @@
+# Configuration centralisée des événements surveillés.
+# Deux modes : "ticketmaster" (API officielle) ou "scraper" (page publique).
+#
+# NOTE : la Discovery API Ticketmaster n'a essentiellement PAS de couverture
+# de la France. Pour les events fr, utilise le mode scraper sur livenation.fr
+# (accessible) plutôt que ticketmaster.fr (bloqué par anti-bot).
+
+events:
+  # === The Weeknd - Allianz Riviera, Nice (via Live Nation FR) ===
+  - id: weeknd_nice_2026_07_21
+    mode: scraper
+    name: "The Weeknd — Nice, 21 juil. 2026"
+    url: "https://www.livenation.fr/event/the-weeknd-after-hours-til-dawn-tour-nice-tickets-edp1618412"
+    method: keywords
+    keywords_available:
+      - "Acheter"
+      - "Trouver des billets"
+      - "Réserver"
+    keywords_soldout:
+      - "Complet"
+      - "Épuisé"
+      - "Sold out"
+
+  - id: weeknd_nice_2026_07_22
+    mode: scraper
+    name: "The Weeknd — Nice, 22 juil. 2026"
+    url: "https://www.livenation.fr/event/the-weeknd-after-hours-til-dawn-tour-nice-tickets-edp1619539"
+    method: keywords
+    keywords_available:
+      - "Acheter"
+      - "Trouver des billets"
+      - "Réserver"
+    keywords_soldout:
+      - "Complet"
+      - "Épuisé"
+      - "Sold out"
+
+  # --- Gabarit pour ajouter un site avec mots-clés ---
+  # - id: bataclan_exemple
+  #   mode: scraper
+  #   name: "Groupe X @ Bataclan"
+  #   url: "https://www.bataclan.fr/event/xxx"
+  #   method: keywords
+  #   selector: ".event-tickets"      # optionnel : CSS selector de la zone à surveiller
+  #   keywords_available: ["Acheter", "Réserver", "Buy tickets"]
+  #   keywords_soldout:  ["Complet", "Sold out", "Épuisé"]
+
+  # --- Gabarit pour hash mode (quand mots-clés pas fiables) ---
+  # - id: salle_indep_exemple
+  #   mode: scraper
+  #   name: "Concert @ Salle indépendante"
+  #   url: "https://exemple.fr/agenda/concert-y"
+  #   method: hash
+  #   selector: "#ticket-block"        # zone à hacher — plus ciblé = moins de faux positifs
+
+  # --- Gabarit mode Ticketmaster (API) — utile hors France ---
+  # - id: tm_exemple_us
+  #   mode: ticketmaster
+  #   name: "Concert US via TM Discovery API"
+  #   tm_event_id: "1ANZkGNGkdvusZc"
