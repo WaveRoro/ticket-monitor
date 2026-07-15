@@ -2,15 +2,15 @@
   "events": {
     "weeknd_nice_2026_07_21": {
       "last_broken": false,
-      "last_check": "2026-07-15T20:18:03.471833+00:00",
-      "last_keyword_state": "soldout",
-      "last_notified": null,
+      "last_check": "2026-07-15T20:24:43.002131+00:00",
+      "last_keyword_state": "available",
+      "last_notified": "2026-07-15T20:24:43.002131+00:00",
       "method": "keywords",
       "mode": "scraper"
     },
     "weeknd_nice_2026_07_22": {
       "last_broken": false,
-      "last_check": "2026-07-15T20:18:04.275828+00:00",
+      "last_check": "2026-07-15T20:24:44.766999+00:00",
       "last_keyword_state": "available",
       "last_notified": null,
       "method": "keywords",
