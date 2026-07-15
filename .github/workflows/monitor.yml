@@ -2,8 +2,9 @@ name: Ticket monitor
 
 on:
   schedule:
-    # Toutes les 15 minutes. GitHub Actions peut retarder de quelques minutes en heure de pointe.
-    - cron: "*/15 * * * *"
+    # Toutes les 5 minutes (repo public → GitHub Actions illimité gratuit).
+    # NB : GitHub cron est "best effort", des retards de quelques minutes sont normaux en heure de pointe.
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}  # permet un run manuel depuis l'onglet Actions
 
 # Nécessaire pour committer state.json en retour sur le repo.
