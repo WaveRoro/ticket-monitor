@@ -2,7 +2,7 @@
   "events": {
     "weeknd_nice_2026_07_21": {
       "last_broken": false,
-      "last_check": "2026-07-16T16:44:04.789850+00:00",
+      "last_check": "2026-07-16T17:52:39.194957+00:00",
       "last_keyword_state": "available",
       "last_notified": "2026-07-15T20:24:43.002131+00:00",
       "method": "keywords",
@@ -10,7 +10,7 @@
     },
     "weeknd_nice_2026_07_22": {
       "last_broken": false,
-      "last_check": "2026-07-16T16:44:05.753299+00:00",
+      "last_check": "2026-07-16T17:52:40.281753+00:00",
       "last_keyword_state": "available",
       "last_notified": null,
       "method": "keywords",
