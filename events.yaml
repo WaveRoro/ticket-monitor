@@ -6,25 +6,11 @@
 # (accessible) plutôt que ticketmaster.fr (bloqué par anti-bot).
 
 events:
-  # === The Weeknd - Allianz Riviera, Nice (via Live Nation FR) ===
-  - id: weeknd_nice_2026_07_21
+  # === Don Toliver - Accor Arena, Paris (via Live Nation FR) ===
+  - id: don_toliver_paris_2026_10_25
     mode: scraper
-    name: "The Weeknd — Nice, 21 juil. 2026"
-    url: "https://www.livenation.fr/event/the-weeknd-after-hours-til-dawn-tour-nice-tickets-edp1618412"
-    method: keywords
-    keywords_available:
-      - "Acheter"
-      - "Trouver des billets"
-      - "Réserver"
-    keywords_soldout:
-      - "Complet"
-      - "Épuisé"
-      - "Sold out"
-
-  - id: weeknd_nice_2026_07_22
-    mode: scraper
-    name: "The Weeknd — Nice, 22 juil. 2026"
-    url: "https://www.livenation.fr/event/the-weeknd-after-hours-til-dawn-tour-nice-tickets-edp1619539"
+    name: "Don Toliver — Accor Arena Paris, 25 oct. 2026"
+    url: "https://www.livenation.fr/event/don-toliver-nitrous-octane-world-tour-leg-2-paris-tickets-edp1680526"
     method: keywords
     keywords_available:
       - "Acheter"
