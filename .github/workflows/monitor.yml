@@ -2,11 +2,13 @@ name: Ticket monitor
 
 on:
   schedule:
-    # Toutes les 5 minutes (repo public → GitHub Actions illimité gratuit).
-    # NB : GitHub cron est "best effort", des retards de quelques minutes sont normaux en heure de pointe.
-    # On évite pile la minute :00 (heure de pointe GitHub Actions) en décalant à :02.
-    - cron: "2-59/5 * * * *"
+    # Backup : le cron GitHub est deprioritisé et souvent en retard d'1h+.
+    # Le vrai cron 5 min vient de Cloudflare Workers via repository_dispatch.
+    # On garde ce schedule comme filet de sécurité si CF Worker tombait.
+    - cron: "*/30 * * * *"
   workflow_dispatch: {}  # permet un run manuel depuis l'onglet Actions
+  repository_dispatch:
+    types: [ticket-check]  # déclenché par le cron externe (Cloudflare Worker)
 
 # Nécessaire pour committer state.json en retour sur le repo.
 permissions:
