@@ -1,5 +1,13 @@
 {
   "events": {
+    "don_toliver_paris_2026_10_25": {
+      "last_broken": false,
+      "last_check": "2026-07-16T23:35:59.633619+00:00",
+      "last_keyword_state": "available",
+      "last_notified": null,
+      "method": "keywords",
+      "mode": "scraper"
+    },
     "weeknd_nice_2026_07_21": {
       "last_broken": false,
       "last_check": "2026-07-16T23:30:59.631938+00:00",
